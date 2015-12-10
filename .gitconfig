@@ -1,0 +1,14 @@
+[alias]
+    ci = commit -v
+    cp = cherry-pick
+	st = status -sb
+	cl = clone
+	co = checkout
+	br = branch
+	dc = diff --cached
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all"
+	last = log -1 --stat
+	last3 = log -3 --stat
+	unstage = reset HEAD --
+
+	# find text across old git objects: git rev-list --since=2015-12-1 --all | xargs git grep "pattern"
